@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Clicker by Binop</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Clicker by BINOP</title>
+  <meta name="description" content="A minimalist and fast automatic clicker for your browser. Designed for developers and gamers. Runs locally, no performance impact.">
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Link to external JS -->
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M12 8v4l3 3"></path>
-                </svg>
-            </div>
-            <h1>Auto Clicker</h1>
-            <p class="subtitle">A minimalist and fast automatic clicker for your browser. Designed for developers and gamers. Runs locally, no performance impact.</p>
-            
-            <a href="#" class="cta-button" target="_blank">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                Add to Chrome
-            </a>
-        </div>
-    </header>
+  <!-- Background Effects -->
+  <div class="bg-blobs"></div>
+  <div class="bg-grain"></div>
 
-    <main class="container">
-        <div class="features">
-            <div class="feature-card">
-                <h3>⚡ Lightning-Fast Controls</h3>
-                <p>No more tedious hovering over buttons. Point your mouse at the target and press <kbd>P</kbd> to start. To stop instantly, use the <kbd>E</kbd> key.</p>
-            </div>
-            <div class="feature-card">
-                <h3>⚙️ Custom Speed</h3>
-                <p>Need to click 10 times a second, or just once a minute? The clicking speed can be accurately set in milliseconds (ms) right in the panel.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🖱️ Floating UI Panel</h3>
-                <p>The clicker stays out of your way. You can move the control panel exactly where you need it using Drag & Drop, and watch the click counter live.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🔒 100% Privacy</h3>
-                <p>All code runs exclusively in your browser. The extension requires no registration, sends no data to remote servers, and contains no ads.</p>
-            </div>
-        </div>
-    </main>
+  <div class="container">
+    
+    <!-- Navigation -->
+    <nav>
+      <div class="brand">
+        <!-- SVG matching the extension logo -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
+          <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path>
+        </svg>
+        <span>Auto Clicker</span>
+      </div>
 
+      <!-- Professional Theme Switch -->
+      <div class="theme-toggle" id="theme-toggle" role="switch" title="Toggle Dark/Light Mode">
+        <div class="theme-knob"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+      <div class="hero-card">
+        <h1 class="hero-title">Auto Clicker</h1>
+        <p class="hero-desc">
+          A minimalist and fast automatic clicker for your browser. Designed for developers and gamers. Runs locally, no performance impact.
+        </p>
+        <!-- Update href with your actual Chrome Web Store link when ready -->
+        <a href="#" class="btn-primary">
+          Add to Chrome
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+      
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Lightning-Fast Controls</h3>
+        <p class="feature-text">
+          No more tedious hovering over buttons. Point your mouse at the target and press <kbd>Ctrl</kbd> + <kbd>P</kbd> to start. To stop instantly, use the <kbd>Ctrl</kbd> + <kbd>E</kbd> combination.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚙️</div>
+        <h3 class="feature-title">Custom Speed</h3>
+        <p class="feature-text">
+          Need to click 10 times a second, or just once a minute? The clicking speed can be accurately set in milliseconds (ms) right inside the panel interface.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🖱️</div>
+        <h3 class="feature-title">Floating UI Panel</h3>
+        <p class="feature-text">
+          The clicker stays out of your way. You can move the sleek, glassmorphic control panel exactly where you need it using Drag & Drop, and watch the click counter live.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3 class="feature-title">100% Privacy</h3>
+        <p class="feature-text">
+          All code runs exclusively in your browser. The extension requires no registration, sends no data to remote servers, and contains no ads whatsoever.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>Built with precision. An extension for Google Chrome.</p>
-            <p style="margin-top: 10px;">CREATED BY <span class="brand">BINOP</span></p>
-        </div>
+      Built with precision. An extension for Google Chrome.<br><br>
+      CREATED BY <span class="brand-text">BINOP</span> | v1.1.1
     </footer>
+
+  </div>
 
 </body>
 </html>
-
-
